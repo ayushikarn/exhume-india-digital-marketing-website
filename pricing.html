@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple & Affordable Pricing for Web Development, App Development, and Digital Marketing by Exhume India.">
+    <title>Pricing | Exhume India</title>
+    
+    <link rel="canonical" href="https://www.exhumeindia.com/pricing.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.exhumeindia.com/pricing.html">
+    <meta property="og:title" content="Pricing | Exhume India">
+    <meta property="og:description" content="Simple & Affordable Pricing for Web Development, App Development, and Digital Marketing by Exhume India.">
+    <meta property="og:image" content="https://www.exhumeindia.com/assets/og-image.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Exhume India",
+      "image": "https://www.exhumeindia.com/logo.png",
+      "description": "Premium digital agency helping businesses scale through high-converting web design, custom software, and strategic marketing.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chas bazar",
+        "addressLocality": "Bokaro",
+        "addressRegion": "Jharkhand",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-7033920511",
+      "email": "exhumeindia@gmail.com",
+      "url": "https://www.exhumeindia.com"
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-blue: #0066cc;
+            --secondary-blue: #00d2ff;
+            --primary-dark: #0f172a;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --text-gray: #475569;
+            --glass-bg: rgba(255, 255, 255, 0.95);
+            --success-green: #25D366;
+            --popular-gradient: linear-gradient(135deg, #0066cc, #00d2ff);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        body { color: var(--primary-dark); background-color: var(--light-bg); line-height: 1.7; overflow-x: hidden; padding-top: 80px; }
+        a { text-decoration: none; transition: all 0.3s ease; }
+        ul { list-style: none; }
+        strong { font-weight: 900; }
+
+        .hidden { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1); }
+        .show { opacity: 1; transform: translateY(0); }
+
+        header { position: fixed; width: 100%; top: 0; background: var(--glass-bg); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); z-index: 1000; backdrop-filter: blur(10px); }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; padding: 15px 20px; }
+        .logo { font-size: 28px; font-weight: 900; color: var(--primary-dark); text-transform: uppercase; letter-spacing: -0.5px; }
+        .logo span { background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; gap: 25px; }
+        .nav-links a { color: var(--primary-dark); font-weight: 600; font-size: 0.95rem; position: relative; }
+        .nav-links a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background: var(--primary-blue); transition: width 0.3s ease; }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a:hover { color: var(--primary-blue); }
+
+        .pricing-hero { text-align: center; padding: 80px 20px 40px; }
+        .pricing-hero h1 { font-size: 3.5rem; font-weight: 900; color: var(--primary-dark); margin-bottom: 15px; }
+        .pricing-hero p.subtext { font-size: 1.2rem; color: var(--text-gray); margin-bottom: 20px; }
+        .trust-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(0, 102, 204, 0.1); color: var(--primary-blue); padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; }
+
+        .pricing-section { max-width: 1200px; margin: auto; padding: 20px 20px 100px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: center; }
+        
+        .pricing-card { background: var(--white); padding: 50px 30px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; position: relative; transition: all 0.4s ease; border: 1px solid rgba(0,0,0,0.03); }
+        .pricing-card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(0,102,204,0.1); border-color: rgba(0,102,204,0.2); }
+        
+        .pricing-card.popular { transform: scale(1.05); border: 2px solid var(--primary-blue); box-shadow: 0 20px 50px rgba(0, 102, 204, 0.15); z-index: 2; }
+        .pricing-card.popular:hover { transform: scale(1.05) translateY(-10px); }
+        
+        .popular-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--popular-gradient); color: var(--white); padding: 8px 20px; border-radius: 50px; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 5px 15px rgba(0, 102, 204, 0.4); }
+
+        .plan-icon { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 20px; }
+        .popular .plan-icon { background: var(--popular-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .pricing-card h3 { font-size: 1.5rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 10px; }
+        .price { font-size: 3rem; font-weight: 900; color: var(--primary-dark); margin-bottom: 30px; display: flex; align-items: center; justify-content: center; }
+        .price span { font-size: 1.2rem; font-weight: 600; color: var(--text-gray); margin-right: 5px; margin-top: 10px; }
+        .price .plus { font-size: 2rem; color: var(--primary-blue); margin-left: 5px; }
+
+        .plan-features { text-align: left; margin-bottom: 40px; }
+        .plan-features li { margin-bottom: 15px; font-size: 1.05rem; color: var(--text-gray); display: flex; align-items: center; gap: 10px; }
+        .plan-features li i { color: var(--success-green); font-size: 1.2rem; }
+
+        .btn-plan { display: inline-block; width: 100%; padding: 15px; border-radius: 12px; font-weight: 800; font-size: 1.1rem; transition: all 0.3s ease; text-transform: uppercase; }
+        .btn-outline { background: transparent; color: var(--primary-blue); border: 2px solid var(--primary-blue); }
+        .btn-outline:hover { background: var(--primary-blue); color: var(--white); }
+        .btn-primary { background: var(--popular-gradient); color: var(--white); border: none; box-shadow: 0 10px 20px rgba(0, 102, 204, 0.3); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(0, 102, 204, 0.4); }
+
+        .other-services { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: var(--white); padding: 100px 20px; text-align: center; position: relative; overflow: hidden; }
+        .other-services::before { content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: url('https://www.transparenttextures.com/patterns/cubes.png'); opacity: 0.05; pointer-events: none; }
+        .other-services-container { max-width: 1000px; margin: auto; position: relative; z-index: 2; }
+        
+        .other-services h2 { font-size: 2.8rem; font-weight: 900; margin-bottom: 15px; }
+        .other-services h2 span { color: var(--secondary-blue); }
+        .other-services p.section-subtext { font-size: 1.2rem; color: #cbd5e1; margin-bottom: 60px; max-width: 700px; margin-inline: auto; }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .service-box { background: rgba(255, 255, 255, 0.05); padding: 40px 20px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); transition: all 0.4s ease; }
+        .service-box:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.1); border-color: var(--secondary-blue); }
+        .service-box i { font-size: 3rem; color: var(--secondary-blue); margin-bottom: 20px; }
+        .service-box h4 { font-size: 1.3rem; margin-bottom: 10px; font-weight: 700; }
+        .service-box p { color: #94a3b8; font-size: 0.95rem; }
+
+        .btn-contact { display: inline-flex; align-items: center; gap: 10px; padding: 16px 40px; background: var(--white); color: var(--primary-dark); font-weight: 800; font-size: 1.1rem; border-radius: 50px; transition: all 0.3s ease; }
+        .btn-contact:hover { background: var(--secondary-blue); color: var(--primary-dark); transform: scale(1.05); }
+
+        .bottom-cta { padding: 80px 20px; text-align: center; background: var(--white); }
+        .bottom-cta h2 { font-size: 2.5rem; color: var(--primary-dark); font-weight: 800; margin-bottom: 30px; }
+        .btn-demo { background: var(--primary-blue); color: var(--white); padding: 16px 40px; border-radius: 50px; font-weight: 800; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(0, 102, 204, 0.2); }
+        .btn-demo:hover { background: var(--primary-dark); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
+
+        footer { background: var(--primary-dark); color: var(--white); padding: 80px 20px 30px; }
+        .footer-container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 50px; margin-bottom: 30px; }
+        .footer-col h3 { margin-bottom: 25px; font-size: 1.5rem; font-weight: 900; }
+        .footer-col p, .footer-col a { color: #94a3b8; font-size: 0.95rem; }
+        .footer-col ul li { margin-bottom: 12px; }
+        .footer-col ul li a:hover { color: var(--secondary-blue); display: inline-block; transform: translateX(5px); }
+        .social-links { margin-top: 25px; display: flex; gap: 15px; }
+        .social-links a { color: var(--white); font-size: 1.2rem; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; width: 45px; height: 45px; align-items: center; justify-content: center; transition: all 0.3s ease; }
+        .social-links a:hover { background: var(--primary-blue); transform: translateY(-5px) rotate(360deg); }
+        .footer-bottom { text-align: center; color: #64748b; font-size: 0.9rem; }
+
+        .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: var(--success-green); color: #FFF; border-radius: 50px; text-align: center; font-size: 35px; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4); z-index: 1000; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; animation: pulse 2s infinite; }
+        .whatsapp-float:hover { transform: scale(1.15) rotate(-10deg); color: white; }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+
+        @media (max-width: 992px) { .pricing-card.popular { transform: scale(1); } .pricing-card.popular:hover { transform: translateY(-10px); } }
+        @media (max-width: 768px) { .nav-links { display: none; } .pricing-hero h1 { font-size: 2.5rem; } .other-services h2 { font-size: 2.2rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><strong>EXHUME</strong> <span>INDIA</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="pricing.html" style="color: var(--primary-blue);">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="pricing-hero hidden">
+        <h1>Simple & Affordable Pricing</h1>
+        <p class="subtext">Choose a plan that fits your business needs perfectly.</p>
+        <div class="trust-badge">
+            <i class="fa-solid fa-shield-halved"></i> No hidden charges | Transparent pricing
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="pricing-grid">
+            
+            <div class="pricing-card hidden" style="transition-delay: 100ms;">
+                <i class="fa-solid fa-paper-plane plan-icon"></i>
+                <h3>Basic Plan</h3>
+                <div class="price"><span>₹</span>4,999</div>
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-check"></i> 1–3 Page Website</li>
+                    <li><i class="fa-solid fa-check"></i> Mobile Responsive</li>
+                    <li><i class="fa-solid fa-check"></i> Basic Design</li>
+                    <li><i class="fa-solid fa-check"></i> Delivery in 5–7 days</li>
+                </ul>
+                <a href="contact.html?plan=basic" class="btn-plan btn-outline">Get Started</a>
+            </div>
+
+            <div class="pricing-card popular hidden" style="transition-delay: 200ms;">
+                <div class="popular-badge">Most Popular</div>
+                <i class="fa-solid fa-rocket plan-icon"></i>
+                <h3>Standard Plan</h3>
+                <div class="price"><span>₹</span>9,999</div>
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-check"></i> 4–6 Pages Website</li>
+                    <li><i class="fa-solid fa-check"></i> Custom Design</li>
+                    <li><i class="fa-solid fa-check"></i> Basic SEO Setup</li>
+                    <li><i class="fa-solid fa-check"></i> WhatsApp Integration</li>
+                    <li><i class="fa-solid fa-check"></i> Delivery in 7–10 days</li>
+                </ul>
+                <a href="contact.html?plan=standard" class="btn-plan btn-primary">Choose Plan</a>
+            </div>
+
+            <div class="pricing-card hidden" style="transition-delay: 300ms;">
+                <i class="fa-solid fa-crown plan-icon"></i>
+                <h3>Premium Plan</h3>
+                <div class="price"><span>₹</span>14,999<span class="plus">+</span></div>
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-check"></i> Full Website (6+ pages)</li>
+                    <li><i class="fa-solid fa-check"></i> Advanced UI/UX Design</li>
+                    <li><i class="fa-solid fa-check"></i> SEO + Speed Optimization</li>
+                    <li><i class="fa-solid fa-check"></i> Contact Forms & Integrations</li>
+                    <li><i class="fa-solid fa-check"></i> Priority Support</li>
+                </ul>
+                <a href="contact.html?plan=premium" class="btn-plan btn-outline">Start Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="other-services">
+        <div class="other-services-container">
+            <h2 class="hidden">Need More Than Just a <span>Website?</span></h2>
+            <p class="section-subtext hidden">We also offer app development, bulk SMS, and digital marketing services to help your business scale faster.</p>
+            
+            <div class="services-grid">
+                <div class="service-box hidden" style="transition-delay: 100ms;">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h4>App Development</h4>
+                    <p>Custom Android & iOS apps built specifically for your business (Custom Pricing).</p>
+                </div>
+                <div class="service-box hidden" style="transition-delay: 200ms;">
+                    <i class="fa-solid fa-comment-sms"></i>
+                    <h4>Bulk SMS</h4>
+                    <p>Reach your customers instantly directly on their phones (Pay per usage).</p>
+                </div>
+                <div class="service-box hidden" style="transition-delay: 300ms;">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h4>Digital Marketing</h4>
+                    <p>Grow your business with data-driven SEO & Ads (Monthly plans).</p>
+                </div>
+            </div>
+
+            <a href="contact.html" class="btn-contact hidden">Contact Us For Custom Needs <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section class="bottom-cta hidden">
+        <h2>Not sure which plan is right for you?</h2>
+        <a href="demo.html" class="btn-demo">👉 Get Free Business Analysis</a>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3><strong>EXHUME</strong> <span>INDIA</span></h3>
+                <p><strong>Exhume India</strong> is a premium digital agency dedicated to helping businesses scale through high-converting web design, custom software, and strategic marketing.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Our Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="demo.html">Request Demo</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-info-list">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-envelope" style="color: var(--secondary-blue);"></i> exhumeindia@gmail.com</p>
+                <p><i class="fa-solid fa-phone" style="color: var(--secondary-blue);"></i> +91 7033920511</p>
+                <p><i class="fa-solid fa-phone" style="color: var(--secondary-blue);"></i> +91 9472740511</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Exhume India</strong>. All Rights Reserved. Crafted for digital dominance.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917033920511?text=Hi!%20I%20am%20looking%20for%20a%20pricing%20quote." class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
